@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS SELECTOR</title>
+    <style>
+        /*element selector*/
+        p{
+            color: blue;
+            border: 2px solid green;
+        }
+        /*id selector*/
+        #redElement{
+            color: aqua;
+        }
+        /*class selector*/
+        .bgyellow{
+            color: darkgoldenrod;
+        }
+        /*group selector*/
+        footer,span{
+            background-color: rebeccapurple;
+        }
+    </style>
+</head>
+<body>
+    <p class="bgyellow" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis perspiciatis laboriosam rem laudantium repellat debitis odit obcaecati nesciunt quia sequi doloribus minus dolore, tempora est veniam dolor. Facere, reiciendis praesentium.</p>
+    <p id="redElement" class="bgyellow">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio provident quam harum quidem, earum quisquam facilis eos voluptate excepturi necessitatibus.</p>
+    <div>
+        <p>paragraphinside div</p>
+        <span>this is span</span>
+        <footer>this is footer</footer>
+    </div>
+</body>
+</html>
