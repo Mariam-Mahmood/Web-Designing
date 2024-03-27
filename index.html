@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebPageDesign</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .main {
+            width: 100%;
+            background-image: url('sunset.jpg');
+            background: linear-gradient(to top, black, black, url('sunset.jpg'));
+            background-position: center;
+            background-size: cover;
+            height: 109vh;
+        }
+
+        .navbar {
+            width: 1200px;
+            height: 75px;
+            margin: auto;
+        }
+
+        .icon {
+            width: 200px;
+            float: left;
+            height: 70px;
+        }
+
+        .logo {
+            color: rgb(91, 26, 97);
+            font-size: 35px;
+            font-family: Arial, Helvetica, sans-serif;
+            padding-left: 20px;
+            float: left;
+        }
+
+        .menu {
+            width: 400px;
+            float: left;
+            height: 70px;
+        }
+
+        ul {
+            float: left;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        ul li {
+            list-style: none;
+            margin-left: 62px;
+            margin-top: 27px;
+            font-size: 14px;
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: rgb(224, 159, 230);
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            font-weight: bold;
+            transition: 0.4s ease-in-out;
+        }
+
+        ul li a:hover {
+            color: rgb(195, 43, 209);
+        }
+
+        .search {
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            width: 100px;
+            height: 40px;
+            background: transparent;
+            /*border: 1px solid orange;*/
+            margin-top: 18px;
+            color: aliceblue;
+            border-right: none;
+            font-size: 16px;
+            float: right;
+            padding: 10px;
+            border-bottom-left-radius: 5px;
+            border-top-left-radius: 5px;
+        }
+
+        .btn {
+            width: 70px;
+            height: 30px;
+            background: rgb(91, 26, 97);
+            border: 2px solid rgb(91, 26, 97);
+            margin-top: 13px;
+            color: aliceblue;
+            font-size: 12px;
+            border-bottom-left-radius: 5px;
+            border-top-left-radius: 5px;
+        }
+
+        .btn:focus {
+            outline: none;
+        }
+
+        .search:focus {
+            outline: none;
+        }
+
+        .content {
+            width: auto;
+            height: auto;
+            margin: auto;
+            color: rgb(127, 27, 136);
+            position: relative;
+        }
+
+        .content .para {
+            font-size: 16px;
+            font-style: italic;
+            padding-left: 20px;
+            padding-bottom: 25px;
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            left: 1.2px;
+            line-height: 30px;
+
+        }
+
+        .content h1 {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 50px;
+            padding-left: 20px;
+            margin-top: 9%;
+            letter-spacing: 2px;
+
+        }
+
+        .content .cn {
+            width: 160px;
+            height: 40px;
+            background-color: rgb(91, 26, 97);
+            border: none;
+            margin-bottom: 10px;
+            margin-left: 20px;
+            font-size: 18px;
+            border-radius: 10px;
+
+        }
+        .content .cn a{
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+            transition: .3s ease;
+            font-weight: bold;
+        }
+
+        .cn:hover {
+            background-color: aliceblue;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <h2 class="logo">PraRoz</h2>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Service</a></li>
+                    <li><a href="">Design</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </div>
+            <div class="search">
+                <input type="search" name="" placeholder="Type to Text">
+                <a href=""><button class="btn">Search</button></a>
+            </div>
+
+        </div>
+        <div class="content">
+            <h1>WEB DESIGN & <br><span>DEVELOPMENT</span> <br> Course</h1>
+            <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+                Excepturi deserunt cum non cupiditate enim sint ea eligendi autem id quam. <br>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas, nam?</p>
+            <button class="cn"><a href="">Join Us</a></button>
+
+
+        </div>
+    </div>
+</body>
+
+</html>
