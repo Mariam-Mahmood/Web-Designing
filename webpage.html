@@ -210,7 +210,8 @@
             font-size: 14px;
             margin-left: 70px;
         }
-        .fflex ul li button{
+        .fflex ul li .bt{
+            display: inline-block;
             color: black;
             text-decoration: none;
             font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
@@ -220,13 +221,69 @@
             background-color: white;
             height: 150px;
             width: 230px;
+            border-style: outset;
+            border: 5px;
             border-radius: 30px;
-            border: none;
-            
+            border-color: rgb(226, 221, 221);
+
         }
         .fflex span{
             font-size: 20px;
             font-weight: normal  ;
+        }
+        .paras{
+            margin-top: 50px;
+            margin-left: 20px;
+        }
+        .paras .pp {
+            color: red;
+            font-weight: bold;
+        }
+        .paras .ppp{
+            font-size: 20px;
+            font-weight: bold;
+            font-size: 23px;
+            margin-top: -5px;
+        }
+        .paras .pppp{
+            margin-top: -15px;
+        }
+        .flex ul {
+            float: left;
+            display: flex;
+            justify-content: center;
+            align-items: center;   
+        }
+        .flex ul li {
+            list-style: none;
+
+            font-size: 14px;
+            margin-left: 2px;
+        }
+        .flex ul li .btt{
+            display: inline-block;
+            color: black;
+            text-decoration: none;
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            font-weight: bold;
+            font-size: 20px;
+            text-align: center;
+            background-color: white;
+            height: 250px;
+            width: 315px;
+            border-radius: 10px;
+            border-color: rgb(226, 221, 221);
+            margin-right: 15px;
+            margin-top: 15px;
+        }
+        .flex span{
+            font-size: 20px;
+            font-weight: normal  ;
+        }
+        .flex .btt div{
+            font-size: 10px;
+            color: rgb(90, 89, 89);
+            margin-top: 10px;
         }
     </style>
 </head>
@@ -269,14 +326,34 @@
         </div>
         <div class="fflex">
             <ul>
-                <li><button>10K <br><span>Online Courses</span></button></li>
-                <li><button>200+ <br><span>Expert Tutors</span></button></li>
-                <li><button>6K+ <br><span>Certified Courses</span></button></li>
-                <li><button>60K+ <br><span>Online Students</span></button></li>
+                <li><button class="bt">10K <br><span>Online Courses</span></button></li>
+                <li><button class="bt">200+ <br><span>Expert Tutors</span></button></li>
+                <li><button class="bt">6K+ <br><span>Certified Courses</span></button></li>
+                <li><button class="bt">60K+ <br><span>Online Students</span></button></li>
             </ul>
         </div>
     </div>
-    
+    <div class="paras">
+        <p class="pp">Favourite Courses</p>
+        <p class="ppp">Top Category</p>
+        <p class="pppp">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas repudiandae minus omnis eos, ratione aliquid laborum beatae earum nam fuga! Voluptatibus provident perspiciatis <br>
+            obcaecati quibusdam saepe ea ratione dolorem tempora!</p>
+    </div>
+    <div class="flex">
+        <ul>
+            <li><button class="btt"><span><img src="a.png"></span><br>Angular <br>Development <div>45 instructors</div></button></li>
+            <li><button class="btt"><span><img src="d.png"></span><br>Docker <br>Development <div>45 instructors</div></button></li>
+            <li><button class="btt"><span><img src="n.png"></span><br>Node js <br>Development<div>45 instructors</div></button></li>
+            <li><button class="btt"><span><img src="s.png"></span><br>Swift <br>Development<div>45 instructors</div></button></li>
+        </ul>
+    </div>
+    <div class="boxx">
+        <div class="paraa">
+            <p class="pp">What's New</p>
+            <p class="ppp">Features Courses</p>
+            <p class="pppp">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas repudiandae minus omnis eos, ratione aliquid laborum beatae earum nam fuga! Voluptatibus provident perspiciatis <br>
+                obcaecati quibusdam saepe ea ratione dolorem tempora!</p>
+        </div>
+    </div>
 </body>
-
 </html>
