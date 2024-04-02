@@ -311,33 +311,113 @@
         .boxx .paraa .pppp{
             margin-top: -15px;
         }
-        .boxx .fflex ul{
+        .flexx ul {
             float: left;
             display: flex;
             justify-content: center;
-            align-items: center;  
-             
+            align-items: center;
         }
-        .boxx .fflex ul li {
-            list-style: none;
-            font-size: 14px;
-            margin-left: 30px;
-        }
-        .boxx .fflex ul li .b{
+
+        .flexx ul li {
             display: inline-block;
             color: black;
             text-decoration: none;
             font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
             font-weight: bold;
-            font-size: 20px;
-            text-align: center;
+            font-size: 14px;
+            text-align:justify;
             background-color: white;
-            height: 250px;
-            width: 315px;
+            height: 500px;
+            width: 350px;
             border-radius: 10px;
             border-color: rgb(226, 221, 221);
-            margin-right: 15px;
+            margin-left: 60px;
             margin-top: 15px;
+        }
+
+        .flexx ul li img {
+            margin-top: 5px;
+            height: 250px;
+            width: 300px;
+            margin-left: 20px;
+        }
+        .flexx ul li .x{
+            margin-left: 20px;
+
+                }
+        .flexx ul li .info {
+            font-size: 18px;
+            text-align: center;
+        }
+        .flexx ul li .book {
+            color: rgb(94, 92, 92);
+            font-weight: normal;
+        }
+        .flexx ul li .stars{
+            color: rgba(241, 241, 35, 0.932);
+        }
+        .flexx ul li .b{
+            font-size: 8px;
+            border-radius: 20px;
+            height: 25px;
+            width: 60px;
+            border-color: #B4A7F5;
+            color: #5C5294;
+
+        }
+        .fllex ul {
+            float: left;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .fllex ul li {
+            display: inline-block;
+            color: black;
+            text-decoration: none;
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            font-weight: bold;
+            font-size: 14px;
+            text-align:justify;
+            background-color: white;
+            height: 500px;
+            width: 350px;
+            border-radius: 10px;
+            border-color: rgb(226, 221, 221);
+            margin-left: 60px;
+            margin-top: 15px;
+        }
+
+        .fllex ul li img {
+            margin-top: 5px;
+            height: 250px;
+            width: 300px;
+            margin-left: 20px;
+        }
+        .fllex ul li .x{
+            margin-left: 20px;
+
+                }
+        .fllex ul li .info {
+            font-size: 18px;
+            text-align: center;
+        }
+        .fllex ul li .book {
+            color: rgb(94, 92, 92);
+            font-weight: normal;
+        }
+        .fllex ul li .stars{
+            color: rgba(241, 241, 35, 0.932);
+        }
+        .fllex ul li .b{
+            font-size: 8px;
+            border-radius: 20px;
+            height: 25px;
+            width: 60px;
+            border-color: #B4A7F5;
+            color: #5C5294;
+
         }
     </style>
 </head>
@@ -408,21 +488,33 @@
             <p class="pppp">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas repudiandae minus omnis eos, ratione aliquid laborum beatae earum nam fuga! Voluptatibus provident perspiciatis <br>
                 obcaecati quibusdam saepe ea ratione dolorem tempora!</p>
         </div>
-        <div class="fflex">
+        <div class="flexx">
             <ul>
-                <li><button class="b"><span><img src="NB.png"></span><p class="info"> Nicole Brown </p>Information About UI/UX Design <br>Degree <p class="book">📕 12+Lessons</p><p class="line">________________________</p> <p class="stars">★★★★</p>★<p class="stars">4.5</p>(15) <div class="B"><button class="in_b">Buy Now</button></div></button></li>
-                <li><button class="b"><span><img src="JR.png"></span><p class="info"> Jenis R. </p>Wordpress for Beginners- Master <br>Wordpress Quickly <p class="book">📕 11+Lessons</p><p class="line">________________________</p> <p class="stars">★★★★</p>★<p class="stars">4.3</p>(15) <div class="B"><button class="in_b">Buy Now</button></div></button></li>
-               <!-- <li><button class="b"><span><img src="JS.png"></span><p class="info">Jesse Sevens </p>Sketch fromA to Z (2022):Become <br>An App Designer<p class="book">📕 12+Lessons</p><p class="line">________________________</p> <p class="stars">★★★★</p>★<p class="stars">4.3</p>(15) <div class="B"><button class="in_b">Buy Now</button></div></button></li> -->     
+                <li><img src="NB.png"> <div class="x"><p class="info"> Nicole Brown </p>Information About UI/UX Design <br>Degree <p class="book">📕
+                        12+Lessons</p><p class="line">________________________________________</p> <span class="stars">★★★★</span>★<span
+                        class="stars">&nbsp;&nbsp;&nbsp;4.5</span>(15) <p class="B"><button class="b">Buy Now</button></p></div></li>
+                <li><img src="JR.png"> <div class="x"><p class="info"> Jenis R. </p>Wordpress for Beginners- Master <br>Wordpress Quickly <p class="book">
+                        📕 11+Lessons</p><p class="line">________________________________________</p> <span class="stars">★★★★</span>★<span
+                        class="stars">4.3</span>(15) <p class="B"><button class="b">Buy Now</button> </p></div></li>
+                <li><img src="JS.png"> <div class="x"><p class="info">Jesse Sevens </p>Sketch from A to Z (2022):Become <br>An App Designer<p class="book">
+                        📕 12+Lessons</p><p class="line">________________________________________</p> <span class="stars">★★★★</span>★<span
+                        class="stars">4.3</span>(15) <p class="B"><button class="b">Buy Now</button></p></div></li>
             </ul>
         </div>
-       <!-- <div class="fllex">
+        <div class="fllex">
             <ul>
-                <li><button class="t"><span><img src="N.B.png"></span><p class="in"> Nicole Brown </p>Learn Angular Fundamentals From <br>Beginner to Advance Level<p class="book">📕 17+Lessons</p><p class="line">________________________</p> <p class="stars">★★★★</p>★<p class="stars">4.4</p>(15) <div class="B"><button class="in_b">Buy Now</button></div></button></li>
-                <li><button class="t"><span><img src="J.S.png"></span><p class="in"> John Smith </p>Build Responsive Real World <br>Website with HTML5 and CSS3<p class="book">📕 12+Lessons</p><p class="line">________________________</p> <p class="stars">★★★★</p>★<p class="stars">4.0</p>(15) <div class="B"><button class="in_b">Buy Now</button></div></button></li>
-                <li><button class="t"><span><img src="SJ.png"></span><p class="in"> Stella Johnsons </p>C# Developers Double Your Coding <br>Speed with Visual Studio<p class="book">📕 15+Lessons</p><p class="line">________________________</p> <p class="stars">★★★★</p>★<p class="stars">4.5</p>(15) <div class="B"><button class="in_b">Buy Now</button></div></button></li>
+                <li><img src="N.B.png"><div class="in"> <p class="inf">Nicole Brown </p>Learn Angular Fundamentals From <br>Beginner to Advance Level<p class="book">📕
+                        17+Lessons</p><p class="li">________________________________________</p> <span class="stars">★★★★</span>★<span
+                         class="stars">&nbsp;&nbsp;&nbsp;4.4</span>(15)<div><button class="b">Buy Now</button></div></div></li>
+                <li><img src="N.B.png"><div class="in"> <p class="inf">John Smith </p>Build Responsive Real World<br>Website with HTML5 and CSS3<p class="book">📕
+                            12+Lessons</p><p class="li">________________________________________</p> <span class="stars">★★★★</span>★<span
+                             class="stars">&nbsp;&nbsp;&nbsp;4.4</span>(15)<div><button class="b">Buy Now</button></div></div></li>
+                <li><img src="N.B.png"><div class="in"> <p class="inf">Stella Johnsons </p>C# Developers Double Your Coding <br>Speed with Visual Studio<p class="book">📕
+                            15+Lessons</p><p class="li">________________________________________</p> <span class="stars">★★★★</span>★<span
+                            class="stars">&nbsp;&nbsp;&nbsp;4.4</span>(15)<div><button class="b">Buy Now</button></div></div></li>
                 
             </ul>
-        </div>-->
+        </div>
     </div>
 </body>
 </html>
