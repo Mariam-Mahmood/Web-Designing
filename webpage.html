@@ -7,7 +7,7 @@
     <title>WebPage</title>
     <style>
         body {
-            height: 4000px;
+            height: 5000px;
         }
 
         .box {
@@ -534,15 +534,12 @@
             margin-left: 5px;
         }
         .box2{
-            height: 850px;
+            height: 1200px;
             width: 1350px;
             background-image: url("images.jpg");
             background-position: center;
             background-size: cover;
 
-        }
-        .boxx .paraa {
-            margin-left: 20px;
         }
         .box2 .paraa{
             padding: 20px;
@@ -557,8 +554,132 @@
             font-weight: bold;
             font-size: 23px;
         }
-        .box2.paraa {
+        
+          .flex1 ul {
+            float: left;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .flex1 ul li {
+            display: inline-block;
+            color: black;
+            text-decoration: none;
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            font-weight: bold;
+            font-size: 14px;
+            text-align:justify;
+            background-color: white;
+            height: 500px;
+            width: 350px;
+            border-radius: 10px;
+            border-color: rgb(226, 221, 221);
+            margin-left: 60px;
+            margin-top: 15px;
+        }
+        .flex1 ul li img {
+            margin-top: 7px;
+            height: 250px;
+            width: 300px;
+            margin-left: 20px;
+            border-radius: 15px;
+        }
+        .flex1 ul li .x{
+            margin-left: 20px;
+            font-weight: normal;
+                }
+        .flex1 ul li .info {
             
+            font-size: 18px;
+            text-align: center;
+            font-weight: bold;
+        }
+        .flex1 ul li .book {
+            color: rgb(94, 92, 92);
+            font-weight: normal;
+        }
+        .flex1 ul li .stars{
+            color: rgba(241, 241, 35, 0.932);
+        }
+        .flex1 ul li .b{
+            font-size: 8px;
+            border-radius: 20px;
+            height: 25px;
+            width: 60px;
+            border-color: #B4A7F5;
+            color: #5C5294;
+            margin-top: 8px;
+
+        }
+        .box2 .point img{
+            margin-left: 600px;
+            height: 40px;
+        }
+        .box2 .para{
+            padding: 20px;
+        }
+        .box2 .para .pp {
+            color: rgb(68, 67, 67);
+            font-weight: bold;
+            text-align: center;
+            font-size: 30px;
+            margin-top: 10px;
+        }
+
+        .box2 .para .ppp {
+            font-size: 20px;
+            font-size: 17px;
+            text-align: center;
+            color: rgb(68, 67, 67);
+            font-weight: normal;
+        }
+        .flex2 ul li {
+            display: inline-block;
+            color: black;
+            text-decoration: none;
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            font-weight: bold;
+            font-size: 14px;
+            text-align: justify;
+            background-color: white;
+            height: 350px;
+            width: 260px;
+            border-color: rgb(226, 221, 221);
+            margin-left: 50px;
+            margin-top: 15px;
+            border-style: outset;
+        }
+        .flex2 ul li img {
+            margin-top: 7px;
+            height: 200px;
+            width: 245px;
+            margin-left: 8px;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+        }
+        .flex2 ul li .info {
+
+            font-size: 18px;
+            text-align: center;
+            font-weight: bold;
+        }
+        .flex2 ul li .x {
+            margin-left: 20px;
+            font-weight: normal;
+            text-align: center;
+            color: #3e3e3f;
+        }
+        .flex2 ul li .profile img{
+            flex: left;
+            height: 35px;
+            width: 35px;
+        }
+        .flex2 ul li .profile span{
+            display: inline-block;
+            margin-left: 10px;
+            color: rgb(94, 92, 92);
+            font-weight: normal;   
         }
 
     </style>
@@ -738,6 +859,41 @@
                 ratione aliquid laborum beatae earum nam fuga! Voluptatibus provident perspiciatis <br>
                 obcaecati quibusdam saepe ea ratione dolorem tempora!</p>
         </div>
+        <div class="flex1">
+            <ul>
+                <li><img src="nicole.png"> <div class="x"><p class="info"> Nicole Brown </p>Information About UI/UX Design <br>JavaScript <p class="book">📕
+                        12+Lessons</p><p class="line">________________________________________</p> <span class="stars">★★★★</span>★<span
+                        class="stars">&nbsp;&nbsp;&nbsp;4.6</span>(15) <div><button class="b">Buy Now</button></div></div></li>
+                <li><img src="jenis.png"> <div class="x"><p class="info"> Jenis R. </p>Wordpress for Beginners- Master <br>Wordpress Quickly <p class="book">
+                        📕 11+Lessons</p><p class="line">________________________________________</p> <span class="stars">★★★★</span>★<span
+                        class="stars">&nbsp;&nbsp;&nbsp;4.3</span>(15)<div> <button class="b">Buy Now</button></div> </div></li>
+                <li><img src="SJ.png"> <div class="x"><p class="info">Jesse Sevens </p>Sketch from A to Z (2022):Become <br>An App Designer<p class="book">
+                        📕 16+Lessons</p><p class="line">________________________________________</p> <span class="stars">★★★★</span>★<span
+                        class="stars">&nbsp;&nbsp;&nbsp;4.3</span>(15) <div><button class="b">Buy Now</button> </div></div></li> 
+            </ul>
+        </div>
+        <div class="point">
+            <img src="point.png" alt="">
+        </div>
+        <div class="para">
+            <p class="pp">Features Instructor</p>
+            <p class="ppp">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit magni vel ratione
+                repellendus dolore nulla nesciunt voluptate reiciendis maxime saepe?<br>
+                Dolorum deleniti et rem velit! At ab eum veniam cum.</p>
+        </div>
+        <div class="flex2">
+            <ul>
+                <li><img src="david.png"><p class="info"> David Lee </p> <p class="x">Web Developer </p><p class="profile">
+                     <img src="red.png" alt=""> <span>50 Students </span></p></li>   
+                <li><img src="daizy.png"><p class="info"> Daizy Millar </p><p class="x"> PHP Expert </p><p class="profile">
+                    <img src="yellow.png" alt=""><span> 40 Students</span></p></li>
+                <li><img src="patricia.png"><p class="info"> Patricia Mendiza </p> <p class="x">Web Developer </p><p class="profile">
+                    <img src="blue.png" alt=""> <span>50 Students</span></p></li>   
+                <li><img src="skyler.png"><p class="info"> Skyler Whites </p><p class="x"> UI Designer</p><p class="profile">
+                     <img src="peach.png" alt=""><span> 50 Students</span></p></li>   
+                
+            </ul>
+         </div>
     </div>
 </body>
 
