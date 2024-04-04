@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WebPage</title>
+    <title>box</title>
     <style>
         body {
             height: 10000px;
@@ -25,6 +25,8 @@
 
         .navbar {
             width: 1200px;
+            padding-left: 100px;
+            ;
         }
 
         .icon {
@@ -85,7 +87,8 @@
             width: 80px;
             height: 40px;
             background: #f66b6b;
-            border: none;
+            border: solid;
+            border-color: #f66b6b;
             color: black;
             font-size: 15px;
             margin: 10px;
@@ -93,8 +96,8 @@
 
         }
 
-        btn:hover {
-            background-color: white;
+        .btn:hover {
+            background-color: transparent;
         }
 
         .content {
@@ -103,6 +106,7 @@
             margin: auto;
             position: relative;
             float: left;
+            padding-left: 100px;
         }
 
         .content p {
@@ -121,7 +125,7 @@
 
         .category {
             margin-top: 420px;
-            margin-left: 15px;
+            margin-left: 115px;
             border-color: white;
             border-radius: 50px;
             background-color: white;
@@ -166,6 +170,7 @@
             margin: auto;
             position: relative;
             float: left;
+            padding-left: 100px;
         }
 
         .contennt .para {
@@ -195,11 +200,11 @@
         }
 
         .fflex {
-            margin-top: 200px;
+            margin-top: 250px;
             width: 400px;
             float: left;
             height: 70px;
-            margin-left: -555px;
+            margin-left: -630px;
         }
 
         .fflex ul {
@@ -211,38 +216,116 @@
 
         .fflex ul li {
             list-style: none;
-            margin-left: 62px;
+            margin-left: 20px;
             margin-top: 35px;
             font-size: 14px;
-            margin-left: 70px;
+            border: none;
+            border: outset;
+            border-radius: 30px;
+
         }
 
-        .fflex ul li .bt {
+        .fflex ul li .bt1 {
             display: inline-block;
             color: black;
             text-decoration: none;
             font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-            font-weight: bold;
-            font-size: 30px;
             text-align: justify;
             background-color: white;
             height: 150px;
-            width: 230px;
+            width: 270px;
             border-style: outset;
             border: 5px;
             border-radius: 30px;
             border-color: rgb(226, 221, 221);
+            background-image: url("img1.png");
+            background-position: left 10px center;
+            background-size: 80px;
+            background-repeat: no-repeat;
+            text-align: center;
+            font-weight: bold;
+            font-size: 20px;
 
         }
 
         .fflex span {
-            font-size: 20px;
             font-weight: normal;
+            font-size: 15px;
+            margin-left: 55px;
+        }
+
+        .fflex ul li .bt2 {
+            display: inline-block;
+            color: black;
+            text-decoration: none;
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            text-align: justify;
+            background-color: white;
+            height: 150px;
+            width: 270px;
+            border-style: outset;
+            border: 5px;
+            border-radius: 30px;
+            border-color: rgb(226, 221, 221);
+            background-image: url("img2.png");
+            background-position: left 10px center;
+            background-size: 80px;
+            background-repeat: no-repeat;
+            text-align: center;
+            font-weight: bold;
+            font-size: 20px;
+
+
+
+        }
+
+        .fflex ul li .bt3 {
+            display: inline-block;
+            color: black;
+            text-decoration: none;
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            text-align: justify;
+            background-color: white;
+            height: 150px;
+            width: 270px;
+            border-style: outset;
+            border: 5px;
+            border-radius: 30px;
+            border-color: rgb(226, 221, 221);
+            background-image: url("img3.png");
+            background-position: left 10px center;
+            background-size: 80px;
+            background-repeat: no-repeat;
+            text-align: center;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .fflex ul li .bt4 {
+            display: inline-block;
+            color: black;
+            text-decoration: none;
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            text-align: justify;
+            background-color: white;
+            height: 150px;
+            width: 270px;
+            border-style: outset;
+            border: 5px;
+            border-radius: 30px;
+            border-color: rgb(226, 221, 221);
+            background-image: url("img4.png");
+            background-position: left 10px center;
+            background-size: 80px;
+            background-repeat: no-repeat;
+            text-align: center;
+            font-weight: bold;
+            font-size: 20px;
         }
 
         .paras {
-            margin-top: 50px;
-            margin-left: 20px;
+            margin-top: 100px;
+            margin-left: 50px;
         }
 
         .paras .pp {
@@ -261,6 +344,9 @@
             margin-top: -15px;
         }
 
+        .flex{
+            margin-left: -15px;
+        }
         .flex ul {
             float: left;
             display: flex;
@@ -289,9 +375,11 @@
             margin-right: 11px;
             margin-top: 15px;
         }
-        .flex ul li .btt span img{
+
+        .flex ul li .btt span img {
             height: 100px;
         }
+
         .flex span {
             font-size: 20px;
             font-weight: normal;
@@ -305,13 +393,13 @@
 
         .boxx {
             height: 1250px;
-            width: 1350px;
+            width: 1330px;
             background-image: url('images.jpg');
             background-position: center;
             background-size: cover;
             margin-top: 350px;
-            padding-top: 10px;
-            padding-left: 10px;
+            padding-top: 20px;
+            padding-left: 20px;
         }
 
         .boxx .paraa {
@@ -334,6 +422,9 @@
             margin-top: -15px;
         }
 
+        .boxx .flexx{
+            margin-left: -50px;
+        }
         .flexx ul {
             float: left;
             display: flex;
@@ -361,8 +452,8 @@
         .flexx ul li img {
             margin-top: 5px;
             height: 250px;
-            width: 300px;
-            margin-left: 20px;
+            width: 330px;
+            margin-left: 10px;
             border-radius: 15px;
         }
 
@@ -396,6 +487,9 @@
 
         }
 
+        .boxx .fllex{
+            margin-left: -50px;
+        }
         .fllex ul {
             float: left;
             display: flex;
@@ -423,8 +517,8 @@
         .fllex ul li img {
             margin-top: 5px;
             height: 250px;
-            width: 300px;
-            margin-left: 20px;
+            width: 330px;
+            margin-left: 10px;
             border-radius: 15px;
         }
 
@@ -455,6 +549,7 @@
             border-color: #B4A7F5;
             color: #5C5294;
             margin-left: 10px;
+            margin-top: 10px;
         }
 
         .boxxx {
@@ -466,7 +561,7 @@
         }
 
         .boxxx .pra {
-            margin-left: 20px;
+            margin-left: 50px;
         }
 
         .boxxx .pra .pp {
@@ -533,7 +628,7 @@
 
         .box2 {
             height: 1200px;
-            width: 1350px;
+            width: 1330px;
             background-image: url("images.jpg");
             background-position: center;
             background-size: cover;
@@ -541,7 +636,8 @@
         }
 
         .box2 .paraa {
-            padding: 20px;
+            padding-top: 30px;
+            margin-left: 50px;
         }
 
         .box2 .paraa .pp {
@@ -555,6 +651,9 @@
             font-size: 23px;
         }
 
+        .box2 .flex1{
+            margin-left: -50px;
+        }
         .flex1 ul {
             float: left;
             display: flex;
@@ -582,8 +681,8 @@
         .flex1 ul li img {
             margin-top: 7px;
             height: 250px;
-            width: 300px;
-            margin-left: 20px;
+            width: 330px;
+            margin-left: 10px;
             border-radius: 15px;
         }
 
@@ -644,6 +743,9 @@
             font-weight: normal;
         }
 
+        .box2 .flex2{
+            margin-left: -40px;
+        }
         .flex2 ul li {
             display: inline-block;
             color: black;
@@ -655,7 +757,7 @@
             background-color: white;
             height: 350px;
             width: 260px;
-            border-color: rgb(226, 221, 221);
+            border-radius: 20px;
             margin-left: 50px;
             margin-top: 15px;
             border-style: outset;
@@ -700,9 +802,11 @@
             margin-left: 600px;
             height: 40px;
         }
+
         .para1 {
             padding: 20px;
         }
+
         .para1 .p1 {
             color: red;
             font-weight: bold;
@@ -710,6 +814,7 @@
             font-size: 30px;
             margin-top: 10px;
         }
+
         .para1 .p2 {
             font-size: 25px;
             font-weight: bolder;
@@ -717,12 +822,14 @@
             color: black;
             font-weight: normal;
         }
+
         .p3 {
             margin-top: -70px;
             width: 400px;
             height: 70px;
 
         }
+
         .p3 ul {
             float: left;
             display: flex;
@@ -730,45 +837,53 @@
             align-items: center;
             margin-left: 170px;
         }
+
         .p3 ul li {
             list-style: none;
             margin: -2px;
             margin-top: 27px;
             border-style: ridge;
         }
+
         .p3 ul li img {
             height: 70px;
             width: 140px;
         }
+
         .box3 {
             margin-top: 80px;
             height: 450px;
-            width: 1350px;
+            width: 1330px;
             background-image: url("pg.png");
             background-position: center;
             background-size: cover;
 
         }
+
         .box3 .paraa {
             padding: 20px;
             float: left;
 
         }
+
         .box3 .paraa .pp {
             color: black;
             font-weight: bold;
             margin-left: 600px;
             font-size: 30px;
         }
+
         .box3 .paraa .ppp {
             font-size: 15px;
             margin-left: 600px;
 
         }
+
         .box3 .paraa .pppp {
             margin-top: 90px;
             margin-left: 600px;
         }
+
         .box3 .paraa .pppp button {
             border-radius: 20px;
             height: 33px;
@@ -776,16 +891,18 @@
             border-color: #B4A7F5;
             color: #5C5294;
         }
+
         .extra {
-            margin-left: 200px;
+            margin-left: 50px;
             margin-top: -40px;
             background-image: url('p.jpg');
             background-position: center;
             background-size: cover;
             height: 300px;
-            width: 1000px;
+            width: 1230px;
             border-radius: 20px;
         }
+
         .loremm {
             margin-left: 400px;
             margin-top: -200px;
@@ -797,31 +914,37 @@
             border-width: 4px;
             border-color: white;
         }
+
         .loremm .lo {
             font-size: 20px;
             padding: 20px;
             text-align: center;
             color: white;
         }
+
         .loremm .lo .dp img {
             height: 40px;
             width: 40px;
         }
+
         .loremm .lo .w {
             font-weight: bold;
             color: black;
             font-size: 24px;
         }
+
         .loremm .lo .s {
             color: rgb(68, 68, 68);
             font-size: 20px;
             margin-left: 30px;
             margin-top: 7px;
         }
+
         .box4 {
             margin-top: 50px;
-            margin-left: 100px;
+            margin-left: 50px;
         }
+
         .box4 ul li {
             display: inline-block;
             margin-top: 30px;
@@ -829,6 +952,7 @@
             height: 100px;
             width: 350px;
         }
+
         .box4 ul li .a1 {
             background-image: url('a1.png');
             background-position: center;
@@ -836,15 +960,18 @@
             height: 100px;
             width: 350px;
         }
+
         .box4 ul li .a1 .bold {
             padding: 5px;
             font-weight: bold;
         }
+
         .box4 ul li .a1 .co {
             margin-top: -5px;
             margin-left: 3px;
             font-size: 13px;
         }
+
         .box4 ul li .a2 {
             background-image: url('a2.png');
             background-position: center;
@@ -852,17 +979,21 @@
             height: 100px;
             width: 350px;
         }
+
         .box4 ul li .a2 .bold {
             padding: 5px;
             font-weight: bold;
         }
+
         .box4 ul li .a2 .co {
             margin-left: 3px;
             font-size: 13px;
         }
+
         .para2 {
             padding: 20px;
         }
+
         .para2 .p1 {
             color: black;
             font-weight: bold;
@@ -870,12 +1001,14 @@
             font-size: 30px;
             margin-top: 10px;
         }
+
         .para2 .p2 {
             font-size: 20px;
             text-align: center;
             color: black;
             font-weight: normal;
         }
+
         .box5 {
             height: 400px;
             width: 1300px;
@@ -883,22 +1016,21 @@
 
         .box5 ul {
             float: left;
-            margin-left: 45px;
         }
 
         .box5 ul li {
             display: inline-block;
             margin-top: 10px;
             margin-left: 20px;
-            height: 350px;
-            width: 250px;
+            height: 380px;
+            width: 280px;
             border: outset;
+            border-radius: 20px;
         }
 
         .box5 ul li img {
-            margin-top: 3px;
-            height: 200px;
-            width: 245px;
+            height: 230px;
+            width: 280px;
             border-top-left-radius: 15px;
             border-top-right-radius: 15px;
         }
@@ -931,8 +1063,8 @@
             background-position: center;
             background-size: cover;
             height: 130px;
-            width: 1000px;
-            margin-left: 150px;
+            width: 1100px;
+            margin-left: 100px;
         }
 
         .box6 ul li {
@@ -958,14 +1090,15 @@
             font-size: 20px;
             margin-top: -40px;
         }
-        .box6 ul li .b{
+
+        .box6 ul li .b {
             text-align: center;
             font-size: 10px;
             margin-top: -15px;
             margin-left: 25px;
         }
 
-        .box6 .p{
+        .box6 .p {
             margin-top: 30px;
             text-align: center;
             font-size: 25px;
@@ -973,7 +1106,7 @@
             font-family: sans-serif;
         }
 
-        .box6 .p1{
+        .box6 .p1 {
             margin-left: 150px;
         }
 
@@ -1002,7 +1135,7 @@
             display: inline-block;
         }
 
-         .footer-col h4{
+        .footer-col h4 {
             font-size: 18px;
             color: black;
             text-transform: capitalize;
@@ -1010,38 +1143,37 @@
             font-weight: bolder;
             position: relative;
             padding-left: 40px;
-         }
+        }
 
-         .footer-col ul li{
+        .footer-col ul li {
             display: block;
             line-height: 35px;
-         }
-         .footer-col ul li a{
+        }
+
+        .footer-col ul li a {
             font-size: 17px;
             color: black;
             text-decoration: none;
             color: black;
             margin-bottom: 5px;
             transition: 0.3s ease;
-         }
+        }
 
-         .footer-col ul li a:hover{
-            color:#f66b6b;
+        .footer-col ul li a:hover {
+            color: #f66b6b;
             padding-left: 5px;
-         }
+        }
 
-         .footer-col ul li input{
+        .footer-col ul li input {
             height: 15px;
             width: 200px;
             border: solid, grey;
 
-         }
-
+        }
     </style>
 </head>
 
 <body>
-
     <div class="box">
         <div class="navbar">
             <div class="icon">
@@ -1061,29 +1193,40 @@
                 <a href=""><button class="btn">Sign in</button></a>
             </div>
         </div>
+
         <div class="content">
             <p>The Leader in Online Learning <br> <span> Engaging & <br>
-                    Accessible Online <br> Courses For All</span><br> Own Your Future Learning New Skills Online</p>
+                    Accessible Online <br> Courses For All</span><br> Own Your Future Learning New Skills Online
+            </p>
         </div>
+
         <div class="category">
             <span>
                 Search online schools,eductional Centers etc
             </span>
             <a href="">Instructor▾</a>
-            <button>➞</button>
+            <button>➡</button>
         </div>
+
         <div class="contennt">
             <p class="para">Trusted by over 15K Users<br>Worldwide since 2022</p>
             <p class="par">1000+ &nbsp; 4.4 &nbsp;&nbsp;<span>★ ★ ★ ★ ★</span> <img src="icon1.png"></p>
         </div>
+
         <div class="fflex">
             <ul>
-                <li><button class="bt">10K <br><span>Online Courses</span></button></li>
-                <li><button class="bt">200+ <br><span>Expert Tutors</span></button></li>
-                <li><button class="bt">6K+ <br><span>Certified Courses</span></button></li>
-                <li><button class="bt">60K+ <br><span>Online Students</span></button></li>
+                <li><button class="bt1">10K
+                        <br><span>Online Courses</span></button></li>
+                <li><button class="bt2">200+
+                        <br><span>Expert Tutors</span></button></li>
+                <li><button class="bt3">6K+
+                        <br><span>Certified Courses</span></button></li>
+                <li><button class="bt4">60K+
+                        <br><span>Online Students</span></button></li>
             </ul>
         </div>
+
+
     </div>
 
     <div class="paras">
@@ -1093,6 +1236,7 @@
             ratione aliquid laborum beatae earum nam fuga! Voluptatibus provident perspiciatis <br>
             obcaecati quibusdam saepe ea ratione dolorem tempora!</p>
     </div>
+
     <div class="flex">
         <ul>
             <li><button class="btt"><span><img src="a.png"></span><br>Angular <br>Development <div>45 instructors</div>
@@ -1105,6 +1249,7 @@
                 </button></li>
         </ul>
     </div>
+
     <div class="boxx">
         <div class="paraa">
             <p class="pp">What's New</p>
@@ -1147,33 +1292,37 @@
                 </li>
             </ul>
         </div>
+
         <div class="fllex">
             <ul>
                 <li><img src="N.B.png">
-                    <div class="in">
-                        <p class="inf">Nicole Brown </p>Learn Angular Fundamentals From <br>Beginner to Advance Level<p
+                    <div class="x">
+                        <p class="info">Nicole Brown </p>Learn Angular Fundamentals From <br>Beginner to Advance Level<p
                             class="book">📕
                             17+Lessons</p>
-                        <p class="li">________________________________________</p> <span class="stars">★★★★</span>★<span
-                            class="stars">&nbsp;&nbsp;&nbsp;4.4</span>(15)<div><button class="b">Buy Now</button></div>
+                        <p class="line">________________________________________</p> <span class="stars">★★★★</span>★<span
+                            class="stars">&nbsp;&nbsp;&nbsp;4.4</span>(15)<div>
+                                <button class="b">Buy Now</button></div>
                     </div>
                 </li>
                 <li><img src="J.S.png">
-                    <div class="in">
-                        <p class="inf">John Smith </p>Build Responsive Real World<br>Website with HTML5 and CSS3<p
+                    <div class="x">
+                        <p class="info">John Smith </p>Build Responsive Real World<br>Website with HTML5 and CSS3<p
                             class="book">📕
                             12+Lessons</p>
-                        <p class="li">________________________________________</p> <span class="stars">★★★★</span>★<span
-                            class="stars">&nbsp;&nbsp;&nbsp;4.4</span>(15)<div><button class="b">Buy Now</button></div>
+                        <p class="line">________________________________________</p> <span class="stars">★★★★</span>★<span
+                            class="stars">&nbsp;&nbsp;&nbsp;4.4</span>(15)<div>
+                                <button class="b">Buy Now</button></div>
                     </div>
                 </li>
                 <li><img src="SJ.png">
-                    <div class="in">
-                        <p class="inf">Stella Johnsons </p>C# Developers Double Your Coding <br>Speed with Visual Studio
+                    <div class="x">
+                        <p class="info">Stella Johnsons </p>C# Developers Double Your Coding <br>Speed with Visual Studio
                         <p class="book">📕
                             15+Lessons</p>
-                        <p class="li">________________________________________</p> <span class="stars">★★★★</span>★<span
-                            class="stars">&nbsp;&nbsp;&nbsp;4.4</span>(15)<div><button class="b">Buy Now</button></div>
+                        <p class="line">________________________________________</p> <span class="stars">★★★★</span>★<span
+                            class="stars">&nbsp;&nbsp;&nbsp;4.4</span>(15)<div>
+                                <button class="b">Buy Now</button></div>
                     </div>
                 </li>
 
@@ -1206,6 +1355,7 @@
             </ul>
         </div>
     </div>
+
     <div class="box2">
         <div class="paraa">
             <p class="pp">What's New</p>
@@ -1214,6 +1364,7 @@
                 ratione aliquid laborum beatae earum nam fuga! Voluptatibus provident perspiciatis <br>
                 obcaecati quibusdam saepe ea ratione dolorem tempora!</p>
         </div>
+
         <div class="flex1">
             <ul>
                 <li><img src="nicole.png">
@@ -1248,15 +1399,18 @@
                 </li>
             </ul>
         </div>
+
         <div class="point">
             <img src="point.png" alt="">
         </div>
+
         <div class="para">
             <p class="pp">Features Instructor</p>
             <p class="ppp">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit magni vel ratione
                 repellendus dolore nulla nesciunt voluptate reiciendis maxime saepe?<br>
                 Dolorum deleniti et rem velit! At ab eum veniam cum.</p>
         </div>
+
         <div class="flex2">
             <ul>
                 <li><img src="david.png">
@@ -1298,6 +1452,7 @@
         <p class="p1">Trusted By</p>
         <p class="p2">500+ Leading University And Company</p>
     </div>
+
     <div class="p3">
         <ul>
             <li><img src="google.png" alt=""></li>
@@ -1308,6 +1463,7 @@
             <li><img src="Spike.png" alt=""></li>
         </ul>
     </div>
+
     <div class="box3">
         <div class="paraa">
             <p class="pp">Want to share your knowledge?<br>
@@ -1320,7 +1476,9 @@
             </p>
         </div>
     </div>
+
     <div class="extra"> </div>
+
     <div class="loremm">
         <div class="lo">
             <p class="p1">Lorem ipsum dolor sit amet consectetur adipisicing <br>elit. Tempore sed quam tenetur maiores,
@@ -1332,6 +1490,7 @@
             </p>
         </div>
     </div>
+
     <div class="box4">
         <ul>
             <li>
@@ -1350,10 +1509,13 @@
             </li>
         </ul>
     </div>
+
     <div class="para2">
         <p class="p1">Latest Blogs</p>
-        <p class="p2">Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Voluptatem molestiae similique blanditiis aliquam minus vel libero</p>
+        <p class="p2">Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Voluptatem molestiae similique
+            blanditiis aliquam minus vel libero</p>
     </div>
+
     <div class="box5">
         <ul>
             <li><img src="b1.png">
@@ -1383,38 +1545,41 @@
             </li>
         </ul>
     </div>
+
     <div class="poi">
         <img src="point.png" alt="">
     </div>
-     <div class="box6">
+
+    <div class="box6">
         <ul>
             <li>
                 <div class="l"><img src="c1.png" alt="">
                     <div class="a">158,812 </div><br>
-                     <div class="b">STUDENTS ENROLLED</div>
+                    <div class="b">STUDENTS ENROLLED</div>
                 </div>
             </li>
-           <li>
+            <li>
                 <div class="l"><img src="c2.png" alt="">
                     <div class="a">747 </div><br>
-                      <div class="b">TOTAL COURSES</div>
+                    <div class="b">TOTAL COURSES</div>
                 </div>
             </li>
             <li>
                 <div class="l"><img src="c3.png" alt="">
                     <div class="a">78 </div> <br>
                     <div class="b">COUNTRIES</span>
-                </div>
-            </li>   
+                    </div>
+            </li>
         </ul>
         <div class="p">
             <p>Unlimited access to 360+ courses and 1600+ <br>
-            hands-on labs</p>
+                hands-on labs</p>
         </div>
         <div class="p1">
             <img src="img.png" alt="">
         </div>
     </div>
+
     <footer class="footer">
         <div class="container">
             <div class="row">
@@ -1422,8 +1587,10 @@
                 <div class="footer-col">
                     <h4> LOGO</h4>
                     <ul>
-                        <li><p>Lorem ipsum dolor sit amet,
-                            adipisicing elit. Eius, officia.</p></li>
+                        <li>
+                            <p>Lorem ipsum dolor sit amet,
+                                adipisicing elit. Eius, officia.</p>
+                        </li>
                         <li> <br><br> Term|Privacy</li>
                     </ul>
                 </div>
@@ -1450,16 +1617,17 @@
                 <div class="footer-col">
                     <h4>News Letters</h4>
                     <ul>
-                            <li><input type="email" name="email" placeholder="Enter your email address"></li>
-                            <li>📍3556 Beech Street, San Fransisco <br> California,CA 96108</li>
-                            <li>🗪 dreamsims@example.com</li>
-                            <li>👩🏻‍💻 +19 123-456-7890</li>
+                        <li><input type="email" name="email" placeholder="Enter your email address"></li>
+                        <li>📍3556 Beech Street, San Fransisco <br> California,CA 96108</li>
+                        <li>🗪 dreamsims@example.com</li>
+                        <li>👩🏻‍💻 +19 123-456-7890</li>
                     </ul>
                 </div>
 
             </div>
         </div>
     </footer>
+
 </body>
 
 </html>
