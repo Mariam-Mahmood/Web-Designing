@@ -6,70 +6,128 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .box4 ul li {
+       
+        .footer {
+            padding: 70px 0;
+        }
+
+        .footer .container {
+            width: 1200px;
+            background-color: red;
+            margin: 40px;
+        }
+
+        .footer .container ul {
+            list-style: none;
+        }
+
+        .footer .footer-col {
+            float: left;
+            width: 23%;
+            padding-right: 20px;
+        }
+
+        .footer-col .row {
             display: inline-block;
-            margin-top: 50px;
-            margin-left: 40px;
-            height: 100px;
-            width: 350px;
         }
 
-        .box4 ul li .a1 {
-            background-image: url('a1.png');
-            background-position: center;
-            background-size: cover;
-            height: 100px;
-            width: 350px;
-        }
+         .footer-col h4{
+            font-size: 18px;
+            color: black;
+            text-transform: capitalize;
+            margin-bottom: 40px;
+            font-weight: bolder;
+            position: relative;
+            padding-left: 40px;
+         }
 
-        .box4 ul li .a1 .bold{
-            padding: 5px;
-            font-weight: bold;
-        }
-        .box4 ul li .a1 .co{
-            margin-top: -5px;
-            margin-left: 3px;
-            font-size: 13px;
-        }
-        .box4 ul li .a2 {
-            background-image: url('a2.png');
-            background-position: center;
-            background-size: cover;
-            height: 100px;
-            width: 350px;
-        }
+         .footer-col ul li{
+            display: block;
+            line-height: 35px;
+         }
+         .footer-col ul li a{
+            font-size: 17px;
+            color: black;
+            text-decoration: none;
+            color: black;
+            margin-bottom: 5px;
+            transition: 0.3s ease;
+         }
 
-        .box4 ul li .a2 .bold{
-            padding: 5px;
-            font-weight: bold;
-        }
+         .footer-col ul li a:hover{
+            color:#f66b6b;
+            padding-left: 5px;
+         }
 
-        .box4 ul li .a2 .co{
-            margin-left: 3px;
-            font-size: 13px;
-        }
+         .footer-col ul li input{
+            height: 15px;
+            width: 200px;
+            border: solid, grey;
+
+         }
+
     </style>
 </head>
 
 <body>
-    <div class="box4">
-        <ul>
-            <li>
-                <div class="a1">
-                    <p class="bold"> Become a Instructor</p>
-                    <p class="co">Top of the instructor around the world <br>
-                        teach millions of students on Mentoring.</p>
-                </div>
-            </li>
-            <li>
-                <div class="a2">
-                    <p class="bold">Transform Access to Education</p>
-                    <p class="co">Create an account to receive our newsletter, <br>
-                        purse recommendations and promotions.</p>
-                </div>
-            </li>
+    <!--   <div class="box7">
+       <div class="a1">
+         <ul>
+            <li>LOGO  <br><br><br>
+            <div class="a2">Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br>
+             Neque impedit dolorem natus! Eos, ipsam dolorem. <br><br><br><br><br> Term &Privacy</div></li>
+           <li>For Instructor</li>
+            <li>For Students</li>
+            <li>News Letters</li>   
         </ul>
-    </div>
+       </div>
+    </div>   -->
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+
+                <div class="footer-col">
+                    <h4> LOGO</h4>
+                    <ul>
+                        <li><p>Lorem ipsum dolor sit amet,
+                            adipisicing elit. Eius, officia.</p></li>
+                        <li><br><br><br> Term|Privacy</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>For Instructor</h4>
+                    <ul>
+                        <li><a href="">Profile</a></li>
+                        <li><a href="">Login</a></li>
+                        <li><a href="">Register</a></li>
+                        <li><a href="">Instructor</a></li>
+                        <li><a href="">Dashboard</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>For Student</h4>
+                    <ul>
+                        <li><a href="">Profile</a></li>
+                        <li><a href="">Login</a></li>
+                        <li><a href="">Register</a></li>
+                        <li><a href="">Instructor</a></li>
+                        <li><a href="">Dashboard</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>News Letters</h4>
+                    <ul>
+                            <li><input type="email" name="email" placeholder="Enter your email address"></li>
+                            <li>📍3556 Beech Street, San Fransisco <br> California,CA 96108</li>
+                            <li>🗪 dreamsims@example.com</li>
+                            <li>👩🏻‍💻 +19 123-456-7890</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
