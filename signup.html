@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup</title>
+    <style>
+        body {
+            width: 100%;
+        }
+
+        .signup {
+            width: 90%;
+            margin-top: 30px;
+            margin-left: 50px;
+            height: 540px;
+            background-color: rgb(241, 252, 211);
+            border-color: rgb(255, 255, 255);
+            border-radius: 20px;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+
+        }
+
+        .signup ul {
+            display: flex;
+            list-style: none;
+        }
+
+        .signup ul .a {
+            float: left;
+            width: 270px;
+            height: 490px;
+            background-color: rgb(83, 73, 59);
+            margin-left: -40px;
+            padding-top: 50px;
+            padding-left: 40px;
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+
+        }
+
+        .signup ul .a .link {
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            font-size: large;
+            padding-bottom: 250px;
+            word-spacing: 10px;
+            line-height: 22px;
+            text-align: justify;
+        }
+
+        .a .btn {
+            width: 130px;
+            height: 50px;
+            background-color: transparent;
+            margin-bottom: 10px;
+            margin-left: 40px;
+            font-size: 18px;
+            border: solid;
+            border-width: 2px;
+            border-radius: 40px;
+            border-color: white;
+
+        }
+
+        .a .btn a {
+            color: white;
+            text-decoration: none;
+        }
+
+
+        .signup ul .b {
+            text-align: center;
+            margin-top: 10px;
+            margin-left: 250px;
+            border-radius: 10px;
+            padding: 25px;
+        }
+
+        .signup ul .b h2 {
+            margin-bottom: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .signup ul .b input {
+            width: 300px;
+            height: 35px;
+            background: transparent;
+            border-bottom: 1px solid;
+            border-right: none;
+            border-left: none;
+            border-top: none;
+            font-weight: bolder;
+            font-size: 15px;
+            font-family: sans-serif;
+            margin-bottom: 30px;
+            padding-bottom: 30px;
+            text-align: center;
+            color: rgb(53, 46, 46);
+        }
+
+        ::placeholder {
+            color: grey;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .signup ul .b .btnn {
+            width: 300px;
+            height: 40px;
+            background-color: rgb(99, 73, 51);
+            border-radius: 30px;
+            border-style: none;
+        }
+
+        .signup ul .b .btnn a {
+            color: white;
+            text-decoration: none;
+            font-family: Arial, Helvetica, sans-serif;            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="signup">
+        <ul>
+            <li>
+                <div class="a">
+                    <p class="link">If you already has an <br>
+                        account, just sign in. </p>
+
+                    <button class="btn"><a href="signin.html">SIGN IN</a></button>
+
+                </div>
+
+            </li>
+
+            <li>
+                <div class="b">
+                    <h2>Create Your Account</h2><br>
+                    <input type="text" name="name" placeholder="NAME"> <br>
+                    <input type="email" name="email" placeholder="EMAIL"> <br>
+                    <input type="password" name="password" placeholder="PASSWORD"> <br>
+                    <button class="btnn"><a href="">SIGN UP</a></button>
+                </div>
+
+            </li>
+
+
+        </ul>
+
+    </div>
+</body>
+
+</html>
