@@ -74,7 +74,7 @@
         .signup ul .b .btnn a {
             color: white;
             text-decoration: none;
-            font-family: Arial, Helvetica, sans-serif;            
+            font-family: Arial, Helvetica, sans-serif;
         }
 
         .signup ul .a {
@@ -118,7 +118,6 @@
             color: white;
             text-decoration: none;
         }
-        
     </style>
 </head>
 
@@ -130,9 +129,10 @@
                     <h2>Welcome</h2><br>
                     <input type="email" name="email" placeholder="EMAIL"> <br>
                     <input type="password" name="password" placeholder="PASSWORD"> <br>
-                    <button class="btnn"><a href="home.html">SIGN IN</a></button>
+                    <button class="btnn" type="button" onclick="validateLogin()"><a href="home.html">SIGN
+                            IN</a></button>
+                    <div id="error-message"></div>
                 </div>
-
             </li>
 
             <li>
@@ -146,11 +146,10 @@
 
             </li>
 
-            
+
 
 
         </ul>
-
     </div>
 </body>
 
