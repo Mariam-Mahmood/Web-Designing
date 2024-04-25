@@ -6,94 +6,77 @@
     <title>Document</title>
     <style>
 
-        
-.extra {
-            margin-left: 50px;
-            margin-top: -40px;
-            background-image: url('p.jpg');
-            background-position: center;
-            background-size: cover;
-            height: 300px;
-            width: 1250px;
-            border-radius: 20px;
-        }
-
-        .extra .p1{
-            margin-top: 30px;
-            color: white;
-            text-align: center;
-            font-size: 15px;
-        }
-
-        .extra .p2 {
-            text-align: center;
-            font-size: 25px;
-            color: white;
-            margin-top: -5px;
-        }
-        
-        .loremm {
-            margin-left: 400px;
-            margin-top: -170px;
-            background: linear-gradient(358.03deg, #FCE2B3 31.4%, #FF8D59 98.18%);
-            height: 300px;
-            width: 510px;
-            border-radius: 20px;
-            border: solid;
-            border-width: 4px;
-            border-color: white;
-        }
-
-        .loremm .lo {
-            margin-top: 40px;
-            font-size: 17px;
-            padding: 20px;
-            text-align: center;
-            color: white;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-
-        .loremm .lo .dp img {
-            height: 45px;
-            width: 45px;
-        }
-
-        .loremm .lo .w {
-            font-weight: bold;
-            font-family: Arial, Helvetica, sans-serif;
-            color: black;
-            font-size: 24px;
-        }
-
-        .loremm .lo .s {
-            color: rgb(68, 68, 68);
-            font-size: 20px;
-            margin-left: 30px;
-            margin-top: 7px;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-
-
     </style>
 </head>
 <body>
+    <div class="container">
+        <form action="/action_page.php">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name">
     
-    <div class="extra">
-        <p class="p">C</p>
-        <p class="p1">Check out the real reviews</p>
-        <p class="p2">Users-love-us don’t take it form us.</p>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+    
+            <label for="psw">Password</label>
+            <input type="password" id="psw" name="psw"
+                   pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                   title="Must contain at least one number, one uppercase and lowercase letter, and at least 8 characters"
+                   required>
+    
+            <input type="submit" value="Sign Up">
+        </form>
     </div>
-    <div class="loremm">
-        <div class="lo">
-            <p class="p1">Lorem ipsum dolor sit amet consectetur adipisicing <br>elit. Tempore sed quam tenetur maiores,
-                distinctio iste laborum expedita esse facilis dolore corrupti praesentium adipisci <br>
-                fugiat quo possimus quasi explicabo vitae sunt!
-            <div class="dp"><img src="dp.png" alt=""></div>
-            <div class="w">Daizy Millar</div>
-            <div class="s">Founder of Awesome UX Technology</div>
-            </p>
-        </div>
+    
+
+
+
+
+
+
+    
+    <div id="message">
+        <h3>Password must contain:</h3>
+        <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+        <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
+        <p id="number" class="invalid">A <b>number</b></p>
+        <p id="length" class="invalid">Minimum <b>8 characters</b></p>
     </div>
+     
+    
+
+
+
+
+
+
+
+
+
+
+     <form id="login-form">
+        <input type="text" id="username" placeholder="Username">
+        <input type="password" id="password" placeholder="Password">
+        <button type="button" onclick="login()">Sign In</button>
+    </form>
+    <div id="error-message"></div>
+
+    <script>
+        function login() {
+            const username = document.getElementById("username").value;
+            const password = document.getElementById("password").value;
+
+            // Validate username and password (you can check against hardcoded values or use an API)
+
+            if (username === "correctUser" && password === "correctPassword") {
+                // Successful login: redirect to the home page
+                window.location.replace("homepage.html");
+            } else {
+                // Display error message
+                document.getElementById("error-message").textContent = "Incorrect username or password.";
+            }
+        }
+    </script>
+     
    
 </body>
 </html>

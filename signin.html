@@ -10,7 +10,7 @@
             width: 100%;
         }
 
-        .signup {
+        .signin {
             width: 90%;
             margin-top: 30px;
             margin-left: 50px;
@@ -22,12 +22,12 @@
 
         }
 
-        .signup ul {
+        .signin ul {
             display: flex;
             list-style: none;
         }
 
-        .signup ul .b {
+        .signin ul .b {
             width: 620px;
             margin-top: 10px;
             margin-left: 250px;
@@ -35,13 +35,13 @@
             padding: 25px;
         }
 
-        .signup ul .b h2 {
+        .signin ul .b h2 {
             margin-bottom: 10px;
             margin-left: 100px;
             font-family: Arial, Helvetica, sans-serif;
         }
 
-        .signup ul .b input {
+        .signin ul .b input {
             width: 300px;
             height: 35px;
             background: transparent;
@@ -59,25 +59,25 @@
         }
 
         ::placeholder {
-            color: grey;
             font-family: Arial, Helvetica, sans-serif;
         }
 
-        .signup ul .b .btnn {
+        .signin ul .b .btn {
             width: 300px;
             height: 40px;
             background-color: rgb(99, 73, 51);
+            color: white;
             border-radius: 30px;
             border-style: none;
-        }
 
-        .signup ul .b .btnn a {
+        }
+        .signin ul .b .btn a{
             color: white;
             text-decoration: none;
-            font-family: Arial, Helvetica, sans-serif;
         }
 
-        .signup ul .a {
+
+        .signin ul .a {
             float: left;
             width: 310px;
             height: 490px;
@@ -89,7 +89,7 @@
 
         }
 
-        .signup ul .a .link {
+        .signin ul .a .link {
             color: white;
             font-family: Arial, Helvetica, sans-serif;
             font-weight: bold;
@@ -122,16 +122,16 @@
 </head>
 
 <body>
-    <div class="signup">
+
+    <div class="signin">
         <ul>
             <li>
                 <div class="b">
                     <h2>Welcome</h2><br>
-                    <input type="email" name="email" placeholder="EMAIL"> <br>
-                    <input type="password" name="password" placeholder="PASSWORD"> <br>
-                    <button class="btnn" type="button" onclick="validateLogin()"><a href="home.html">SIGN
-                            IN</a></button>
-                    <div id="error-message"></div>
+
+                    <input type="email" id="email" name="email" placeholder="EMAIL"> <br>
+                    <input type="password" id="psw" name="psw" placeholder="PASSWORD"> <br>
+                    <button class="btn"><a href="home.html">SIGN IN</a></button>
                 </div>
             </li>
 
@@ -145,12 +145,9 @@
                 </div>
 
             </li>
-
-
-
-
         </ul>
     </div>
+
 </body>
 
 </html>

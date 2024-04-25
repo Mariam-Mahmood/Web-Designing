@@ -22,11 +22,6 @@
 
         }
 
-        .signup ul {
-            display: flex;
-            list-style: none;
-        }
-
         .signup ul .a {
             float: left;
             width: 270px;
@@ -85,6 +80,7 @@
         }
 
         .signup ul .b input {
+
             width: 300px;
             height: 35px;
             background: transparent;
@@ -102,7 +98,6 @@
         }
 
         ::placeholder {
-            color: grey;
             font-family: Arial, Helvetica, sans-serif;
         }
 
@@ -114,10 +109,9 @@
             border-style: none;
         }
 
-        .signup ul .b .btnn a {
+        .signup ul .b .btnn a{
             color: white;
             text-decoration: none;
-            font-family: Arial, Helvetica, sans-serif;            
         }
     </style>
 </head>
@@ -139,10 +133,12 @@
             <li>
                 <div class="b">
                     <h2>Create Your Account</h2><br>
+
                     <input type="text" name="name" placeholder="NAME"> <br>
-                    <input type="email" name="email" placeholder="EMAIL"> <br>
+                    <input type="email" name="email" placeholder="EMAIL" required> <br>
                     <input type="password" name="password" placeholder="PASSWORD"> <br>
                     <button class="btnn"><a href="">SIGN UP</a></button>
+
                 </div>
 
             </li>
