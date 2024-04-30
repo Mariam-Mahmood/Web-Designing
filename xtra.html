@@ -1,66 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        /* styles.css */
+          body {
+            width: 100%;
+            height: 100%;
+            background-color: blue;
+        }
 
-/* Set global styles */
-body, html {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-}
+        .signup {
+            width: 95%;
+            height: 95vh;
+            margin-top: 10px;
+            margin-left: 50px;
+            background-color: rgb(196, 40, 40);
+            border-radius: 20px;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 
-/* Create a flex container for the layout */
-.container {
-    display: flex;
-    height: 100%;
-    width: 100%;
-    background-color: #1eee74; /* Set your desired background color */
-}
-
-/* Style the signup div */
-.signup {
-    height: 89.25%;
-    width: 90%;
-    background-color: #d11b1b; /* Set your desired background color */
-    padding: 20px;
-    box-sizing: border-box;
-}
-
-/* Style the list */
-.list {
-    display: flex;
-    list-style: none;
-    height: 89.25%;
-    flex-direction: column; /* Stack list items vertically */
-    flex: 1; /* Distribute remaining space equally between list items */
-}
-
-/* Style individual list items */
-.a, .b {
-    padding: 10px;
-    border: 1px solid #ccc; /* Add a border for separation */
-    background-color: #f9f9f9; /* Set your desired background color */
-}
-
+        }
     </style>
 </head>
-
 <body>
-    <div class="container">
-        <div class="signup">
-            <!-- Your signup content goes here -->
-        </div>
-        <ul class="list">
-            <li class="a">Item A</li>
-            <li class="b">Item B</li>
-        </ul>
-    </div>
-</body>
 
+    <div class="signup">
+        <ul>
+            <li class="a">
+                <p class="link">If you already has an <br>
+                    account, just sign in. </p>
+
+                <button class="btn"><a href="signin.html">SIGN IN</a></button>
+            </li>
+
+
+            <li class="b">
+                <h2>Create Your Account</h2><br>
+
+                <input type="text" name="name" placeholder="NAME"> <br>
+                <input type="email" name="email" placeholder="EMAIL" required> <br>
+                <input type="password" name="password" placeholder="PASSWORD"> <br>
+                <button class="btnn"><a href="">SIGN UP</a></button>
+
+            </li>
+
+
+        </ul>
+
+    </div>
+
+</body>
 </html>
