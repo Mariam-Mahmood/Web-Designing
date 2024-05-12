@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <style>
+        body {
+            width: 100%;
+        }
+
+        .icon {
+            float: left;
+
+        }
+
+        .icon .logo img {
+            height: 100px;
+            width: 100px;
+            font-size: 35px;
+            font-family: Arial, Helvetica, sans-serif;
+            padding-left: 15px;
+            float: left;
+        }
+
+        .menu {
+            width: 400px;
+            float: left;
+            height: 70px;
+            margin-left: -40px;
+
+        }
+
+        .menu ul {
+            float: left;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 280px;
+        }
+
+        .menu ul li {
+            width: 80px;
+            list-style: none;
+            margin-left: 60px;
+            margin-top: 27px;
+            font-size: 14px;
+
+        }
+
+        .menu ul li a {
+            color: #9D9898;
+            text-decoration: none;
+            font-family: Arial, Helvetica, sans-serif;
+            transition: 0.4s ease-in-out;
+        }
+
+        .menu ul li .b {
+            background-color: #FB7402;
+            height: 40px;
+            width: 100px;
+            border: none;
+            color: white;
+        }
+
+        .a {
+            height: 80vh;
+            padding-left: 60px;
+            padding-top: 10px;
+        }
+
+        .a p {
+            font-size: 40px;
+            margin-top: 200px;
+            padding-left: 20px;
+            letter-spacing: 1px;
+            color: orangered;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .a .s1 {
+            font-size: 60px;
+            font-weight: bold;
+            color: black;
+        }
+
+        .a .s2 {
+            display: inline-block;
+            line-height: 15px;
+            font-size: 8px;
+            font-weight: bold;
+            color: black;
+            letter-spacing: 1px;
+
+        }
+
+        .a .a2 img {
+            width: 250px;
+            margin-top: -30px;
+            margin-bottom: 50px;
+            
+        }
+
+        .a .a1 img {
+            margin-left: 96%;
+            width: 400px;
+            height: 350px;
+            margin-top: -300px;
+        }
+
+        .a .a3 {
+            margin-top: 30px;
+            margin-left: 60px;
+        }
+        .a .a3 img{
+            height: 200px;
+            margin-right: 15px;
+            
+        }
+        
+        .a4{
+            width: 100%;
+            margin-top: 600px;
+        }  
+
+        .a4 ul {
+            display: flex;
+            list-style: none;
+        }
+
+        .a4 .a41{
+            width: 60%;
+        }
+        .a4 .a41 p {
+            font-size: 40px;
+            
+            padding-left: 20px;
+            letter-spacing: 1px;
+            color: orangered;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin-left: 50px;
+        }
+
+        .a41 .s1 {
+            font-size: 60px;
+            font-weight: bold;
+            color: black;
+        }
+
+        .a41 .s2 {
+            display: inline-block;
+            line-height: 15px;
+            font-size: 8px;
+            font-weight: bold;
+            color: black;
+            letter-spacing: 1.5px;
+
+        }
+ 
+        .a41 .s2 .b1{
+            background-color: #FB7402;
+            color: white;
+            width: 130px;
+            height: 50px;
+            border-style: none;
+            font-size: 19px;
+            margin-right: 20px;
+            margin-top: 30px;
+        }
+
+        .a41 .s2 .b2{
+            background-color: white;
+            color: #FB7402;
+            width: 130px;
+            height: 50px;
+            border-style: solid;
+            border-color:#FB7402;
+            font-size: 19px;
+            font-weight: bold;
+            margin-right: 20px;
+        }
+        .a4 .a42{
+            width: 20%;
+        }
+        .a42 img {
+            margin-left: 10%;
+            width: 450px;
+            height: 350px;
+        }
+
+        .a5{
+            width: 100%;
+            
+        }  
+        .a5 ul {
+            display: flex;
+            list-style: none;
+        }
+        
+        .a5 .a51{
+            width: 30%;
+        }
+        .a51 img {
+            width: 600px;
+            height: 400px;
+        }
+
+        .a5 .a52{
+            width: 60%;
+            margin-left: 15%;
+        }
+        .a5 .a52 p {
+            font-size: 40px;
+            
+            padding-left: 20px;
+            letter-spacing: 1px;
+            color: orangered;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin-left: 50px;
+        }
+
+        .a52 .s1 {
+            font-size: 60px;
+            font-weight: bold;
+            color: black;
+        }
+
+        .a52 .s2 {
+            display: inline-block;
+        line-height: 15px;
+            font-size: 8px;
+            font-weight: bold;
+            color: black;
+            letter-spacing: 1.5px;
+
+        }
+ 
+        .a52 .s2 .b1{
+            background-color: #FB7402;
+            color: white;
+            width: 130px;
+            height: 50px;
+            border-style: none;
+            font-size: 19px;
+            margin-right: 20px;
+            margin-top: 30px;
+        }
+
+        .a52 .s2 .b2{
+            background-color: white;
+            color: #FB7402;
+            width: 130px;
+            height: 50px;
+            border-style: solid;
+            border-color:#FB7402;
+            font-size: 19px;
+            font-weight: bold;
+            margin-right: 20px;
+        }
+
+        .a6{
+            width: 100%;            
+            height: 610px;
+            background-color: #FB7402;
+        }
+
+        .a6 p {
+            font-size: 40px;            
+            padding-left: 20px;
+            letter-spacing: 1px;
+            color: white;
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin-left: 50px;
+        }
+
+        .a6 .s1 {
+            font-size: 60px;
+            font-weight: bold;
+        }
+
+        .a6 .s2 {
+            display: inline-block;
+        line-height: 15px;
+            font-size: 8px;
+            font-weight: bold;
+            letter-spacing: 1.5px;
+        }
+ 
+        .a6 .a61{
+            height: 300px;
+            width: 100%;
+            margin-left: -150px;
+            
+        }
+
+
+        .a7{
+            width: 100%;
+            margin-top: 200px;
+        }  
+        .a7 ul {
+            display: flex;
+            list-style: none;
+        }
+
+        .a7 .a71{
+            width: 60%;
+        }
+
+        .a7 .a71 p {
+            font-size: 40px;
+            
+            padding-left: 20px;
+            letter-spacing: 1px;
+            color: orangered;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin-left: 50px;
+        }
+
+        .a71 .s1 {
+            font-size: 60px;
+            font-weight: bold;
+            color: black;
+        }
+
+        .a71 .s2 {
+            display: inline-block;
+            line-height: 15px;
+            font-size: 8px;
+            font-weight: bold;
+            color: black;
+            letter-spacing: 1.5px;
+
+        }
+ 
+        .a71 .s2 .b1{
+            background-color: #FB7402;
+            color: white;
+            width: 130px;
+            height: 50px;
+            border-style: none;
+            font-size: 19px;
+            margin-right: 20px;
+            margin-top: 30px;
+        }
+
+        .a71 .s2 .b2{
+            background-color: white;
+            color: #FB7402;
+            width: 130px;
+            height: 50px;
+            border-style: solid;
+            border-color:#FB7402;
+            font-size: 19px;
+            font-weight: bold;
+            margin-right: 20px;
+        }
+
+        .a7 .a72{
+            width: 20%;
+        }
+        
+        .a72 img {
+            margin-left: 10%;
+            width: 450px;
+            height: 350px;
+        }
+
+        .footer {
+            width: 100%;
+            max-lines: -10px;
+            height: 300px;
+            background-color: black;
+            padding-top: 30px;
+        }
+
+        .footer .container {
+            background-color: white;
+            margin: 30px;
+        }
+
+        .footer .container ul {
+            list-style: none;
+        }
+
+        .footer .footer-col {
+            float: left;
+            width: 12%;
+            padding-right: 20px;
+        }
+
+        .footer .footer-col1 {
+            float: left;
+            width: 40%;
+            padding-right: 20px;
+        }
+
+        .footer .footer-col2 {
+            float: left;
+            width: 25%;
+        }
+
+        .footer-col .row {
+            display: inline-block;
+        }
+
+        .footer-col1 .row {
+            display: inline-block;
+        }
+
+        .footer-col2 .row {
+            display: inline-block;
+        }
+
+        .footer-col1 h3 img {
+            height: 80px;
+            width: 80px;
+            padding-left: 40px;
+            margin-top: -50px;
+        }
+
+        .footer-col h4 {
+            font-size: 18px;
+            color: white;
+            text-transform: capitalize;
+            margin-bottom: 40px;
+            font-weight: bolder;
+            position: relative;
+            margin-top: -30px;
+            padding-left: 40px;
+        }
+
+        .footer-col2 h4 {
+            font-size: 18px;
+            color: white;
+            text-transform: capitalize;
+            margin-bottom: 40px;
+            font-weight: bolder;
+            position: relative;
+            margin-top: -30px;
+            padding-left: 40px;
+        }
+
+        .footer-col ul li {
+            display: block;
+            line-height: 35px;
+
+
+
+        }
+
+        .footer-col1 ul li {
+            display: block;
+            line-height: 15px;
+
+        }
+
+        .footer-col2 ul li {
+            display: block;
+            line-height: 45px;
+            color: white;
+        }
+
+        .footer-col1 ul li .p {
+            color: white;
+            font-size: 10px;
+            margin-left: -30px;
+            letter-spacing: -.25px;
+
+        }
+
+        .footer-col ul li a {
+            font-size: 15px;
+            color: white;
+            text-decoration: none;
+            transition: 0.3s ease;
+        }
+
+        .footer-col2 ul li a {
+            font-size: 17px;
+            color: white;
+            text-decoration: none;
+            transition: 0.3s ease;
+        }
+
+        .footer-col2 ul li img {
+            height: 20px;
+            width: 20px;
+
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="icon">
+        <h2 class="logo"><img src="hks.png" alt=""></h2>
+    </div>
+    <div class="menu">
+        <ul>
+            <li><a href="pg1.html">Home</a></li>
+            <li><a href="pg2.html">Services</a></li>
+            <li><a href="">About Us</a></li>
+            <li><a href="pg4.html">Blog</a></li>
+            <li><a href="">Contact Us</a></li>
+            <li><button class="b">Get Started</button></li>
+        </ul>
+    </div>
+
+    <div class="a">
+        <p>
+            Our Services <br>
+            <span class="s1"> What We do?</span><br>
+
+            <span class="s2">
+                Zwei flinke Boxer jagen die quirlige Esta und ihren Mops durch Sylt. Franz jagt im
+                komplett verwahrlosten Taxi quer durch Bayern Z Zwblf <br>
+                Boxkampter jagen Viktor quer über den großen Sylter Deich. Vogel Quax zwickd Johnys Pferd Bim
+                <br><br>
+                Sylvia wagt quick den Jux bei Pforzheim. Polyfon zwitschernd alßen Moxchens Vögel Rüben, Joghurt
+                und Quark "Fix. Schwyd quäkt Jürgen <br>
+                Jürger blod vom vom Paß. Victor jagt zwölf Boxkampfer quer über großen Sylter
+                <span class="a1"><img src="tab.png" alt=""></span>
+            </span> <br>
+            <span class="a2"><img src="a3.png" alt=""></span> <br>
+            Technologies <br> <span class="s1">Core Technologies</span>
+        </p>
+
+        <div class="a3">
+            <img src="a31.png" alt=""><img src="a32.png" alt=""><img src="a33.png" alt=""><img src="a34.png" alt=""><img
+                src="a35.png" alt="">
+        </div>
+       
+
+    </div>
+
+    <div class="a4">
+        <ul>
+            <li class="a41"> <p>
+                Services <br>
+                <span class="s1">MVP Development</span><br>
+    
+                <span class="s2">
+                    Zwei flinke Boxer jagen die quirlige Esta und ihren Mops durch Sylt. Franz jagt im komplett <br>
+                    verwahrlosten Taxi quer durch Bayern Z Zwblf Boxkampter jagen Viktor quer über den <br>
+                     großen Sylter Deich. Vogel Quax zwickd Johnys Pferd Bim <br> <br>
+                     Sylvia wagt quick den Jux bei Pforzheim. Polyfon zwitschernd alßen Moxchens Vögel <br>
+                     Rüben, Joghurt und Quark "Fix. Schwyd quäkt Jürgen Jürger blod vom vom Paß. Victor <br>
+                     jagt zwölf Boxkampfer quer über großen <br>
+                     <button class="b1">Learn More</button><button class="b2">Contact Us</button>
+                     
+                </span>
+            </p></li>
+            <li class="a42"><img src="a41.png" alt=""></li>
+        </ul>    
+    </div>
+
+    <div class="a5">
+        <ul>
+            <li class="a51"><img src="a51.png" alt=""></li>
+            <li class="a52"> <p>
+                Services <br>
+                <span class="s1">Process Automation</span><br>
+    
+                <span class="s2">
+                    Zwei flinke Boxer jagen die quirlige Esta und ihren Mops durch Sylt. Franz jagt im komplett <br>
+                    verwahrlosten Taxi quer durch Bayern Z Zwblf Boxkampter jagen Viktor quer über den <br>
+                    großen Sylter Deich. Vogel Quax zwickd Johnys Pferd Bim <br><br>
+                    Sylvia wagt quick den Jux bei Pforzheim. Polyfon zwitschernd alßen Moxchens Vögel <br>
+                    Rüben, Joghurt und Quark "Fix. Schwyd quäkt Jürgen Jürger blod vom vom Paß. Victor <br>
+                    jagt zwölf Boxkampfer quer über großen Sylter <br>
+                     <button class="b1">Learn More</button><button class="b2">Contact Us</button>
+                     
+                </span>
+            </p></li>
+        </ul>
+    </div>
+
+    <div class="a6">
+        <p>
+            Services <br>
+            <span class="s1">Process Automation</span><br>
+
+            <span class="s2">
+                Zwei flinke Boxer jagen die quirlige Esta und ihren Mops durch Sylt. Franz jagt im komplett verwahrlosten Taxi quer durch Bayern Z Zwblf Boxkampter jagen <br>
+                 Viktor quer über den großen Sylter Deich. Vogel Quax zwickd Johnys Pferd Bim <br>              
+            </span> <br>
+            <span class="a61"><img src="a6.png" alt=""></span>
+        </p>
+        
+    </div>
+
+    <div class="a7">
+        <ul>
+            <li class="a71"> <p>
+                Services <br>
+                <span class="s1">MVP Development</span><br>
+    
+                <span class="s2">
+                    Zwei flinke Boxer jagen die quirlige Esta und ihren Mops durch Sylt. Franz jagt im komplett <br>
+                    verwahrlosten Taxi quer durch Bayern Z Zwblf Boxkampter jagen Viktor quer über den <br>
+                     großen Sylter Deich. Vogel Quax zwickd Johnys Pferd Bim <br> <br>
+                     Sylvia wagt quick den Jux bei Pforzheim. Polyfon zwitschernd alßen Moxchens Vögel <br>
+                     Rüben, Joghurt und Quark "Fix. Schwyd quäkt Jürgen Jürger blod vom vom Paß. Victor <br>
+                     jagt zwölf Boxkampfer quer über großen <br>
+                     <button class="b1">Learn More</button><button class="b2">Contact Us</button>
+                     
+                </span>
+            </p></li>
+            <li class="a72"><img src="a7.png" alt=""></li>
+        </ul> 
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+
+                <div class="footer-col1">
+                    <h3><img src="hks.png" alt=""></h3>
+                    <ul>
+                        <li>
+                            <p class="p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                                minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                commodo consequat. Duis aute irure dolor in reprehenderit
+                                in voluptate velit esse fugiat nulla pariatur.</p>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="">Services</a></li>
+                        <li><a href="">Our Technologies</a></li>
+                        <li><a href="">Policies</a></li>
+                        <li><a href="">Testinomials</a></li>
+                        <li><a href="">Customer Services</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Us</h4>
+                    <ul>
+                        <li><a href="">Teams</a></li>
+                        <li><a href="">Contact Us</a></li>
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">Solutioms</a></li>
+                        <li><a href="">Management</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col2">
+                    <h4>About</h4>
+                    <ul>
+                        <li><img src="call.png" alt="">&nbsp;&nbsp;&nbsp;&nbsp;+92992321132</li>
+                        <li><img src="mail.png" alt="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;infoohkstechlabs@gmail.com</li>
+                        <li><img src="location.png" alt="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;New Block Near Town
+                            Hudiya City</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
