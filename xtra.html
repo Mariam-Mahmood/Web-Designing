@@ -1,54 +1,437 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+
+    <title>Home</title>
     <style>
-          body {
+        body {
             width: 100%;
-            height: 100%;
-            background-color: blue;
+            margin-left: 5%;
         }
 
-        .signup {
-            width: 95%;
-            height: 9vh;
-            margin-top: 10px;
-            margin-left: 50px;
-            background-color: rgb(196, 40, 40);
+        .icon .logo img {
+            height: 100px;
+            width: 100px;
+            font-size: 35px;
+            font-family: Arial, Helvetica, sans-serif;
+            padding-left: 15px;
+            float: left;
+            margin-left: 70px;
+        }
+
+        .menu {
+            width: 100%;
+            float: left;
+            height: 70px;
+            
+            margin-top: -100px;
+
+        }
+
+        .menu ul {
+            float: left;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 43%;
+        }
+
+        .menu ul li {
+            width: 69.5px;
+            list-style: none;
+            margin-left: 36px;
+            margin-top: 27px;
+            font-size: 14px;
+
+        }
+
+        .menu ul li a {
+            color: #9D9898;
+            text-decoration: none;
+            font-family: Arial, Helvetica, sans-serif;
+            transition: 0.4s ease-in-out;
+        }
+
+        .menu ul li .b {
+            background-color: #FB7402;
+            height: 40px;
+            width: 100px;
+            border: none;
+            color: white;
+        }
+
+        .a {
+            height: 80vh;
+            padding-left: 60px;
+            padding-top: 10px;
+        }
+
+        .a p {
+            font-size: 40px;
+            margin-top: 200px;
+            padding-left: 20px;
+            letter-spacing: 1px;
+            color: #FB9A02;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .a .s1 {
+            font-size: 90px;
+            font-weight: bold;
+            color: black;
+        }
+
+        .a .s2 {
+            display: inline-block;
+            line-height: 15px;
+            font-size: 8px;
+            font-weight: bold;
+            color: black;
+            letter-spacing: -.5px;
+
+        }
+
+        .a .a1 img {
+            margin-left: 76%;
+            width: 200px;
+            height: 200px;
+            margin-top: -270px;
+        }
+
+        .a .a2 img {
+            width: 250px;
+            margin-left: 20px;
+            margin-top: -15px;
+        }
+
+        .a .a3 {
+            width: 100%;
+            margin-top: 100px;
+            margin-left: -30px;
+        }
+
+        .a .a3 ul {
+            display: flex;
+            list-style: none;
+
+        }
+
+        .a .a3 .li1 {
+            width: 50%;
+            height: 400px;
+            margin-left: 3.5%;
+            border-color: #f1f1f1;
+            border-style: solid;
+            border-width: 3px;
             border-radius: 20px;
-            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+
+        }
+
+        .a .a3 .li1 h2 {
+            margin-left: 22px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .a .a3 .li1 input {
+            width: 90%;
+            height: 35px;
+            background: transparent;
+            font-weight: bolder;
+            font-size: 13px;
+            margin-left: 20px;
+            border-radius: 10px;
+            border-width: 1px;
+            margin-bottom: 15px;
+            border-style: solid;
+            border-color: #d6d6d6;
+            padding: 7px;
+            text-align: left;
+        }
+
+        .a .a3 .li1 .in {
+            height: 35px;
+            text-align: left;
+            padding-bottom: 70px;
+        }
+
+        .a .a3 .li1 .b1 {
+            width: 60px;
+            height: 33px;
+            background-color: #FB9A02;
+            margin-left: 22px;
+            border-color: transparent;
+            border-radius: 5px;
+        }
+
+        .a .a3 .li2 {
+            width: 30%;
+            height: 400px;
+            background: linear-gradient(180deg, #FB9302 0%, #FB7402 100%);
+            margin-left: 7%;
+            padding-left: 20px;
+            border-radius: 20px;
+        }
+
+        .a .a3 .li2 h1 {
+            color: white;
+        }
+
+        .a .a3 .li2 h2 {
+            color: white;
+        }
+
+        .a .a3 .li2 .p {
+            color: #FFFFFF99;
+            font-size: 15px;
+            margin-left: -20px;
+            margin-top: 25px;
+        }
+
+        .a .a3 .li2 .moji {
+            color: #FFFFFF99;
+            margin-bottom: 20px;
+
+        }
+
+        .a .a3 .li2 img {
+            height: 20px;
+            width: 20px;
+        }
+
+        .footer {
+            width: 100%;
+            max-lines: -10px;
+            margin-top: 600px;
+            height: 300px;
+            background-color: black;
+            padding-top: 30px;
+        }
+
+        .footer .container {
+            background-color: white;
+            margin: 30px;
+        }
+
+        .footer .container ul {
+            list-style: none;
+        }
+
+        .footer .footer-col {
+            float: left;
+            width: 12%;
+            padding-right: 20px;
+        }
+
+        .footer .footer-col1 {
+            float: left;
+            width: 40%;
+            padding-right: 20px;
+        }
+
+        .footer .footer-col2 {
+            float: left;
+            width: 25%;
+        }
+
+        .footer-col .row {
+            display: inline-block;
+        }
+
+        .footer-col1 .row {
+            display: inline-block;
+        }
+
+        .footer-col2 .row {
+            display: inline-block;
+        }
+
+        .footer-col1 h3 img {
+            height: 80px;
+            width: 80px;
+            padding-left: 40px;
+            margin-top: -50px;
+        }
+
+        .footer-col h4 {
+            font-size: 18px;
+            color: white;
+            text-transform: capitalize;
+            margin-bottom: 40px;
+            font-weight: bolder;
+            position: relative;
+            margin-top: -30px;
+            padding-left: 40px;
+        }
+
+        .footer-col2 h4 {
+            font-size: 18px;
+            color: white;
+            text-transform: capitalize;
+            margin-bottom: 40px;
+            font-weight: bolder;
+            position: relative;
+            margin-top: -30px;
+            padding-left: 40px;
+        }
+
+        .footer-col ul li {
+            display: block;
+            line-height: 35px;
+
+
+
+        }
+
+        .footer-col1 ul li {
+            display: block;
+            line-height: 15px;
+
+        }
+
+        .footer-col2 ul li {
+            display: block;
+            line-height: 45px;
+            color: white;
+        }
+
+        .footer-col1 ul li .p {
+            color: white;
+            font-size: 10px;
+            margin-left: -30px;
+            letter-spacing: -.25px;
+
+        }
+
+        .footer-col ul li a {
+            font-size: 15px;
+            color: white;
+            text-decoration: none;
+            transition: 0.3s ease;
+        }
+
+        .footer-col2 ul li a {
+            font-size: 17px;
+            color: white;
+            text-decoration: none;
+            transition: 0.3s ease;
+        }
+
+        .footer-col2 ul li img {
+            height: 20px;
+            width: 20px;
 
         }
     </style>
 </head>
+
 <body>
-
-    <div class="signup">
+    <div class="icon">
+        <h2 class="logo"><img src="hks.png" alt=""></h2>
+    </div>
+    <div class="menu">
         <ul>
-            <li class="a">
-                <p class="link">If you already has an <br>
-                    account, just sign in. </p>
-
-                <button class="btn"><a href="signin.html">SIGN IN</a></button>
-            </li>
-
-
-            <li class="b">
-                <h2>Create Your Account</h2><br>
-
-                <input type="text" name="name" placeholder="NAME"> <br>
-                <input type="email" name="email" placeholder="EMAIL" required> <br>
-                <input type="password" name="password" placeholder="PASSWORD"> <br>
-                <button class="btnn"><a href="">SIGN UP</a></button>
-
-            </li>
-
-
+            <li><a href="">Home</a></li>
+            <li><a href="pg2.html">Services</a></li>
+            <li><a href="">About Us</a></li>
+            <li><a href="pg4.html">Blog</a></li>
+            <li><a href="">Contact Us</a></li>
+            <li><button class="b">Get Started</button></li>
         </ul>
-
     </div>
 
+    <div class="a">
+        <p>Get In Touch <br> <span class="s1"> Contact Us <br></span>
+            <span class="s2"> Zwei flinke Boxer jagen die
+                quirlige Esta und ihren Mops durch Sylt. Franz
+                jagt im komplett verwahrlosten Taxi quer durch
+                Bayern Z Zwblf Boxkamp <br> ter jagen Viktor quer
+                über den großen Sylter Deich. Vogel Quax
+                zwickd Johnys Pferd Bim</span>
+        </p>
+        <div class="a1">
+            <img src="hks.png" alt="">
+        </div>
+        <div class="a2"><img src="a3.png" alt=""></div>
+        <div class="a3">
+            <ul>
+                <li class="li1">
+                    <h2>Send Us A Message</h2>
+                    <input type="text" id="name" placeholder="Your Name"> <br>
+                    <input type="email" id="email" placeholder=" Your Email"> <br>
+                    <input type="text" class="in" id="message" placeholder=" Message"> <br>
+                    <button class="b1"></button>
+                </li>
+                <li class="li2">
+                    <h1>Contact Info</h1>
+                    <div class="moji"><img src="call.png" alt="">&nbsp;&nbsp;&nbsp;&nbsp;+92992321132</div>
+                    <div class="moji"><img src="mail.png"
+                            alt="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;infoohkstechlabs@gmail.com</div>
+                    <div class="moji"><img src="location.png" alt="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;New Block Near
+                        Town Hudiya City</div>
+                    <div class="moji"><img src="whatsapp.png" alt="">&nbsp;&nbsp;&nbsp;&nbsp;012-334-6575</div>
+                    <h2>Development Office</h2>
+                    <p class="p">New Block Near Town Hudiya City</p>
+                    <div class="emoji"><img src="twitter.png" alt="">;&nbsp;<img src="linkedin.png" alt="">&nbsp;<img
+                            src="facebook.png" alt="">&nbsp;<img src="instagram.png" alt=""></div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+
+                <div class="footer-col1">
+                    <h3><img src="hks.png" alt=""></h3>
+                    <ul>
+                        <li>
+                            <p class="p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                                minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                commodo consequat. Duis aute irure dolor in reprehenderit
+                                in voluptate velit esse fugiat nulla pariatur.</p>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="">Services</a></li>
+                        <li><a href="">Our Technologies</a></li>
+                        <li><a href="">Policies</a></li>
+                        <li><a href="">Testinomials</a></li>
+                        <li><a href="">Customer Services</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Us</h4>
+                    <ul>
+                        <li><a href="">Teams</a></li>
+                        <li><a href="">Contact Us</a></li>
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">Solutioms</a></li>
+                        <li><a href="">Management</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col2">
+                    <h4>About</h4>
+                    <ul>
+                        <li><img src="call.png" alt="">&nbsp;&nbsp;&nbsp;&nbsp;+92992321132</li>
+                        <li><img src="mail.png" alt="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;infoohkstechlabs@gmail.com</li>
+                        <li><img src="location.png" alt="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;New Block Near Town
+                            Hudiya City</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </footer>
 </body>
+
 </html>
